@@ -16,12 +16,6 @@ This project includes two Docker challenges:
 
 ## How to Use
 
-### Prerequisites
-
-- Docker
-- Docker Compose
-
-### Setup Instructions
 
 #### Challenge 1
 
