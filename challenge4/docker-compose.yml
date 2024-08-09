@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   db:
@@ -16,7 +16,6 @@ services:
 
   node-service:
     build: ./docker/api
-    # container_name: challenge4-node-service  # Remove or comment out this line
     working_dir: /app
     volumes:
       - ./docker/api:/app
@@ -28,9 +27,6 @@ services:
       DB_DATABASE: ${DB_DATABASE}
       DB_USERNAME: ${DB_USERNAME}
       DB_PASSWORD: ${DB_PASSWORD}
-    # Remove the ports section for node-service
-    # ports:
-    #   - "3000:3000"
 
   nginx:
     build: ./docker/nginx
